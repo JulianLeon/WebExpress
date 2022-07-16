@@ -1,0 +1,66 @@
+footer {
+    padding: 4rem 2rem;
+    position: relative;
+    width: 100%;
+    background-color: $primary-color;
+    display: grid;
+    grid-gap: 1rem;
+    align-content: center;
+    justify-content: center;
+    grid-template-areas: 
+    "contact contact"
+    "links recent";
+
+    h6 {
+        color: $text-light;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        margin-bottom: 0.8rem;
+        font-weight: 400;
+    }
+
+    li {
+        line-height: 2;
+        font-size: 0.8rem;
+    }
+
+    .footer-links {
+        grid-area: links;
+        padding: 1rem;
+        grid-column: 50%;
+
+    }
+
+
+    .recent-posts {
+        grid-area: recent;
+        padding: 1rem;
+        width: 100%;
+        grid-column: 50%;
+    }
+
+
+    .footer-contact {
+        grid-area: contact;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $fourth-color;
+        border-bottom: solid #fff 1px;
+        padding-bottom: 2rem;
+
+        i {
+            color: $fourth-color;
+            margin-bottom: 0.5rem;
+        }
+    }
+    
+    span {
+        font-size: 0.6rem;
+      color: $fifth-color;
+      position: absolute;
+      top: 90%;
+      left: 50%;
+        transform: translateX(-50%);
+    }
+}

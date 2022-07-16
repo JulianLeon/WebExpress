@@ -1,0 +1,153 @@
+.menu-btn {
+  position: absolute;
+  z-index: 6;
+  right: 3rem;
+  top: 4rem;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+  @include transition-ease;
+
+  &__burger {
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    width: 28px;
+    height: 3px;
+    background: $fourth-color;
+    @include transition-ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: $fourth-color;
+      width: 28px;
+      height: 3px;
+      top: -8px;
+      @include transition-ease;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: $fourth-color;
+      width: 20px;
+      height: 3px;
+      top: 8px;
+      @include transition-ease;
+    }
+    &.open {
+      transform: rotate(720deg);
+      background: transparent;
+
+      &::before {
+        transform: rotate(45deg) translate(5px, 8px);
+      }
+
+      &::after {
+        width: 28px;
+        transform: rotate(-45deg) translate(3px, -7px);
+      }
+    }
+  }
+}
+
+nav {
+  background-color: $primary-color;
+  width: 100%;
+  height: 8rem;
+  position: relative;
+  top: 0;
+  left: 0;
+ 
+ 
+  &::after {
+      content: '';
+      background-color: $fourth-color;
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      top: 98%;
+      left: 0;
+  }
+
+  .logo-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .menu-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: $primary-color;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    z-index: 5;
+    transform: translateY(-101vh);
+    @include transition-ease;
+
+    &.open {
+      transform: translateY(0);
+    }
+
+    &__item {
+      padding: 1rem;
+      transform: translateX(100%);
+      @include transition-ease;
+
+      a {
+        font-size: 2rem;
+        color: set-text-color($primary-color);
+
+        &:hover {
+          color: $fourth-color;
+        }
+      }
+
+      &.open {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  .social-icons {
+    position: absolute;
+    top: 70vh;
+    width: 100%;
+    text-align: center;
+    transform: translateX(100%);
+    z-index: 5;
+    @include transition-ease;
+
+    a {
+      padding: 0 1rem;
+
+      &:hover {
+        color: $fourth-color;
+      }
+    }
+
+    &.open {
+      transform: translateX(0);
+    }
+  }
+}

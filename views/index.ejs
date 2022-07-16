@@ -1,0 +1,153 @@
+<% layout('layouts/boilerplate') %>
+
+<!-- *************** Hero Area ************** -->
+<section id="hero">
+
+  <div class="hero__overlay"></div>
+  <div class="hero__heading--container">
+    <h1 class="hero__text--h1">Flowing Life Yoga</h1>
+    <p class="hero__text--para">
+      <!-- <span>Willkommen</span> -->
+      Dein erster Schritt zu einem neuen Bewusstsein für deinen Körper und
+      Geist.
+    </p>
+  </div>
+  <div class="hero__text--buttons">
+    <a class="hero__button primary" href="http://youtube.com">Live Klassen</a>
+    <a class="hero__button secondary" href="http://youtube.com">Youtube</a>
+  </div>
+</section>
+<!-- ******************************* Author Section *************************************** -->
+
+<section id="author">
+  <div class="author__picture--container">
+    <img
+      class="author__picture--img"
+      src="Pictures/Komprimiert/yoga-braunau-1-6.jpg"
+      alt=""
+    />
+  </div>
+
+  <div class="author__text--container">
+    <h2 class="author__text--header">Ein bisschen etwas über mich</h2>
+    <div class="author__text--para">
+      Mein Name ist Julian und wie du dir wahrscheinlich denkst liebe ich es
+      Yoga zu praktizieren. <br /><br />
+
+      Lange bevor ich mit der bewegten Form des Yoga begann, fand ich meine
+      Liebe zur Meditation. Ich ging sogar nach Thailand, um von buddhistischen
+      Mönchen Meditation zu lernen. <br /><br />
+
+      Ich bin dein Ansprechpartner in Sachen Yoga, Meditation, Atmetechniken und
+      einem ausgeglichenen Leben.
+    </div>
+    <a class="author__text--readmore">Read More</a>
+  </div>
+</section>
+<!-- ******************************* Offering Section *************************************** -->
+<section id="offering">
+  <h3 class="offering-header">Klick auf die Fotos für Infos zum Angebot</h3>
+  <div class="offering__cards--container">
+  <div class="offering__content--container">
+    <div class="offering__img">
+      <img src="/Pictures/offer1.jpg" alt="gruppeneinheit" />
+    </div>
+    <div class="offering__card">
+      <h3 class="offering__card--title">Gruppenklassen</h3>
+      <p class="offering__card--para">
+        In diesen Einheiten bewegen wir uns gemeinsam durch fordernde Sequenzen
+        um unseren Körper geschmeidiger und stärker zu machen. <br /><br />
+        Die Einheiten bestehen aus Körperübungen, Atemtechniken und Meditation.
+        <br /><br />
+        Du wirst dich nach den Einheiten ausgeglichen und zufrieden fühlen.
+      </p>
+    </div>
+  </div>
+
+  <div class="offering__content--container">
+    <div class="offering__img">
+      <img src="/Pictures/offer2.jpg" alt="privateinheit" />
+    </div>
+    <div class="offering__card">
+      <h3 class="offering__card--title">Privateinheiten</h3>
+      <p class="offering__card--para">
+        In den Privateinheiten führe ich dich durch eine auf dich zugeschnittene
+        Einheit. <br /><br />
+        Egal ob du Schmerzen in deinem Körper lindern möchtest, tiefer gehen
+        möchtest in die Welt der Atmung oder fortgeschrittene Positionen lernen
+        möchtest, hier nehme ich mir Zeit, nur für deine Bedürfnisse.
+        <br /><br />
+        Für eine kostenlose Probeeinheit melde dich gerne!
+      </p>
+    </div>
+  </div>
+
+  <div class="offering__content--container">
+    <div class="offering__img">
+      <img src="/Pictures/offer3.jpg" alt="meditation" />
+    </div>
+    <div class="offering__card">
+      <h3 class="offering__card--title">Meditation</h3>
+      <p class="offering__card--para">
+        Yoga ist so viel mehr als nur Körperübungen! <br /><br />
+        Erst wenn wir tief in Meditation eintauchen, spüren wir die wahren
+        Vorteile der Praxis. Wenn du spüren möchtest von was ich rede, melde
+        dich gerne für eine kostenlose Probeeinheit. <br /><br />
+        In diesen Einheiten zeige ich dir wie du ganz simpel beginnen kannst zu
+        mehr Ruhe zu finden.
+      </p>
+    </div>
+  </div>
+
+  <div class="offering__content--container">
+    <div class="offering__img">
+      <img src="/Pictures/offer4.jpg" alt="atemtechnik" />
+    </div>
+    <div class="offering__card">
+      <h3 class="offering__card--title">Atemtechniken</h3>
+      <p class="offering__card--para">
+        Die richtige Atmung ist der Schlüssel zu Gesundheit und Lebenskraft. Sie
+        wird sehr oft unterschätzt und kaum jemand weiß heute wie man richtig
+        atmet. <br /><br />
+        Wenn du wissen möchtest wie du dein ganzes Leben ganz simpel verbessern
+        kannst, dann bist du hier genau richtig!
+      </p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ******************* Contact Form ********************** -->
+<section id="contact">
+  <h3>Melde dich für mehr Informationen</h3>
+   
+  <form id="messageform" method="POST"
+  action="send">
+    <input
+      class="name"
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Dein Name..."
+      required
+    />
+    <input
+      class="email"
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Deine E-Mail..."
+      required
+    />
+    <textarea
+      class="message"
+      name="message"
+      id="message"
+      cols="30 "
+      rows="10"
+      placeholder="Deine Nachricht an mich..."
+      required
+    ></textarea>
+    <button type="submit" class="submit" value="submit">Absenden</button>
+  </form>
+</section>

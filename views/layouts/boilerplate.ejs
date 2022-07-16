@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flowing Life Yoga</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn">
+        <span class="menu-btn__burger"></span>
+      </div>
+
+      <nav class="nav">
+        <!-- LOGO -->
+        <div class="logo-container">
+          <img src="Pictures/Logoedited.png" alt="" />
+        </div>
+        <!-- Navigation Link List -->
+        <ul class="menu-nav">
+          <li class="menu-nav__item active">
+            <a href="/" class="menu-nav__link">Home</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="/angebot" class="menu-nav__link">Angebot</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="/blog" class="menu-nav__link">Blog</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="/contact" class="menu-nav__link">Kontakt</a>
+          </li>
+        </ul>
+        <!-- Social Icons -->
+        <div class="social-icons">
+          <a href="https://facebook.com/julianleonyoga">
+            <i class="fab fa-facebook fa-3x"></i>
+          </a>
+          <a href="https://instagram.com/julianleonyoga">
+            <i class="fab fa-instagram fa-3x"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <!-- EJS MATE ADDS PAGES HERE -->
+      <%- body %>
+
+      
+    </main>
+
+    <footer id="footer">
+        <div class="footer-links">
+            <h6>Direct Links</h6>
+          <ul class="footer-links__list">
+            <li class="footer-links__item"><a href="#">Privacy</a></li>
+            <li class="footer-links__item"><a href="#">Terms of use</a></li>
+            <li class="footer-links__item"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="recent-posts">
+            <h6>Recent Posts</h6>
+            <ul class="recent-posts__list">
+                <li class="recent-posts__item"><a href="#">Ahimsa</a></li>
+                <li class="recent-posts__item"><a href="#">Practice Yoga in the 21 Century</a></li>
+                <li class="recent-posts__item"><a href="#">How to do Sun Salutations</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <ul class="footer-contact__list">
+                <li class="footer-contact__item">
+                    <i class="fas fa-envelope"></i> Email: <a href="#">julian.sagberger@gmail.com</a>
+                </li>
+                <li class="footer-contact__item">
+                    <i class="fas fa-phone"></i> Telefon: <a href="#">+43 660/ 32 45 206</a>
+                </li>
+            </ul>
+        </div>
+        <span>&copy Flowinglife Yoga 2021</span>
+      </footer>
+    <script src="/scripts/navbar.js"></script>
+    <script src="/scripts/contact.js"></script>
+  </body>
+</html>

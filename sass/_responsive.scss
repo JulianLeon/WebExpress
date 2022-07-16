@@ -1,0 +1,631 @@
+@include media-sm {
+  // *************** Homepage (Small) ************
+
+  // Hero Section
+  section#hero {
+    .hero__heading--container {
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+    }
+    .hero__text--buttons {
+      a {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  // Author Section
+  section#author {
+    padding: 8rem 7rem;
+
+    .author__picture--container {
+      margin-bottom: 2rem;
+    }
+
+    .author__text--container {
+      font-size: 150%;
+    }
+  }
+
+  // Offering Section
+  section#offering {
+    padding: 5rem 5rem 8rem 5rem;
+
+    .offering-header {
+      font-size: 1.8rem;
+      margin-bottom: 5rem !important;
+    }
+    .offering__cards--container {
+      grid-row-gap: 4rem;
+
+      .offering__card {
+        h3 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  // Contact Section
+  section#contact {
+    padding: 4rem 2rem;
+
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+
+    form {
+      justify-content: stretch;
+      padding: 2rem 20%;
+    }
+  }
+
+  // *************** Angebot (Small) ************
+
+  // Angebot Hero
+  section.offerings-section {
+    padding: 6rem 10%;
+
+    .offerings-grid {
+        .offering__card {
+          .inner_offering {
+            padding: 2.5rem 15%;
+          }
+        }
+      }
+  }
+
+  
+
+  // *************** Footer (Small) *************
+  footer {
+    padding: 4rem 2rem 6rem 2rem;
+
+    .footer-contact {
+      li {
+        font-size: 1rem;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+
+@include media-md {
+  // *************** Homepage (Medium) ************
+  // Navigation {
+  .menu-btn {
+    visibility: hidden;
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    align-content: center;
+
+    .logo-container {
+      position: static;
+      width: 100%;
+      height: 100%;
+    }
+
+    .menu-nav {
+      transform: translateY(0);
+      height: 100%;
+      position: static;
+      flex-direction: row;
+      z-index: inherit;
+
+      &__item {
+        transform: translateX(0);
+        padding: 0 2rem;
+
+        a {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .social-icons {
+      position: static;
+      transform: translateX(0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        font-size: 0.5rem;
+      }
+    }
+  }
+
+  // Hero Section
+  section#hero {
+    .hero__heading--container {
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+    }
+    .hero__text--buttons {
+      a {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  // Author Section
+  section#author {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 4rem;
+    align-items: center;
+    padding: 8rem 6rem;
+
+    .author__picture--container {
+      margin-bottom: 0;
+    }
+
+    .author__text--container {
+      font-size: 150%;
+    }
+  }
+
+  // Offering Section
+  section#offering {
+    padding: 4rem 5rem 8rem 5rem;
+
+    .offering__cards--container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 5rem;
+
+      .offering-header {
+        font-size: 1.8rem;
+      }
+
+      .offering__card {
+        h3 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  // Contact Section
+  section#contact {
+    h3 {
+      font-size: 1.8rem;
+    }
+
+    form {
+      justify-content: stretch;
+      padding: 2rem 20%;
+      grid-template-areas:
+        "name name email email"
+        "message message message message"
+        ". button button .";
+    }
+  }
+
+  // *************** Angebot (Medium) ************
+
+  // Angebot Hero
+  .offering-hero {
+    height: 50vh;
+  }
+
+  section.offerings-section {
+    padding: 6rem 10%;
+  }
+
+  // *************** Footer (Medium) *************
+  footer {
+    grid-template-areas: "links recent contact";
+    grid-column-gap: 3rem;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 4rem 4rem 8rem 4rem;
+
+    h6 {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    li {
+      font-size: 1.2rem;
+    }
+
+    .footer-contact {
+      border-bottom: none;
+      align-self: center;
+
+      li {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+      }
+    }
+
+    span {
+      font-size: 1.1rem;
+      top: 85%;
+    }
+  }
+}
+
+@include media-lg {
+  // *************** Homepage (Large) ************
+  // Navigation {
+  nav {
+    .menu-nav {
+      &__item {
+        padding: 0 calc(2rem + 2vw);
+
+        a {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .social-icons {
+      position: static;
+      transform: translateX(0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        font-size: 0.5rem;
+      }
+    }
+  }
+  // Hero Section
+  section#hero {
+    height: 70vh;
+
+    .hero__heading--container {
+      h1 {
+        font-size: 4.5rem;
+        letter-spacing: 2px;
+        margin-bottom: 3rem;
+      }
+      p {
+        font-size: 1.9rem;
+        margin-bottom: 3rem;
+      }
+    }
+    .hero__text--buttons {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 4rem;
+
+      a {
+        font-size: 1.4rem;
+        letter-spacing: 1.4px;
+      }
+    }
+  }
+
+  section#author {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 4rem;
+    align-items: center;
+    padding: 8rem 6rem;
+
+    .author__picture--container {
+      margin-bottom: 0;
+      padding: 6rem;
+    }
+
+    .author__text--container {
+      font-size: 150%;
+
+      .author__text--header {
+        font-size: 2.4rem;
+        margin-bottom: 4rem;
+      }
+
+      .author__text--para {
+        font-size: 1.4rem;
+        margin-bottom: 4rem;
+      }
+
+      a {
+        font-size: 1.4rem;
+        padding: 0.6rem 3rem;
+      }
+    }
+  }
+
+  section#offering {
+    padding: 6rem 8rem 8rem 8rem;
+
+    .offering-header {
+      font-size: 2.8rem;
+    }
+
+    .offering__cards--container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 6rem;
+
+      .offering__card {
+        padding: 3rem !important;
+
+        h3 {
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  section#contact {
+    padding: 8rem;
+
+    h3 {
+      font-size: 2.2rem;
+    }
+
+    form {
+      justify-content: stretch;
+      padding: 2rem 20%;
+      grid-template-areas:
+        "name name email email"
+        "message message message message"
+        ". button button .";
+    }
+  }
+
+  // *************** Angebot (Large) ************
+
+  // Angebot Hero
+  .offering-hero {
+    height: 60vh;
+
+    h1 {
+      font-size: 4.5rem;
+    }
+  }
+
+  section.offerings-section {
+    padding: 8rem 5%;
+
+    .offerings-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 5rem;
+
+      .offering__card {
+
+        .inner_offering{
+            padding: 2.5rem 5%;
+        }
+        .inner_offering:last-child {
+          box-shadow: none;
+        }
+
+
+
+        h4 {
+            font-size: 2.4rem;
+        }
+
+        h5 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+      }
+
+      .offering__card:nth-child(1) {
+        grid-row: span 2;
+      }
+      .offering__card:nth-child(2) {
+        grid-row: span 3;
+      }
+      .offering__card:nth-child(3) {
+        grid-row: span 1;
+      }
+    }
+  }
+}
+
+@include media-xl {
+  // *************** Homepage ************
+  // Navigation {
+  nav {
+    .logo-container {
+      height: 80%;
+      align-self: center;
+    }
+
+    .menu-nav {
+      &__item {
+        padding: 0 calc(2rem + 2vw);
+
+        a {
+          font-size: 1.7rem;
+        }
+      }
+    }
+
+    .social-icons {
+      position: static;
+      transform: translateX(0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        font-size: 0.7rem;
+      }
+    }
+  }
+  // Hero Section
+  section#hero {
+    height: 80vh;
+
+    .hero__heading--container {
+      h1 {
+        font-size: 6rem;
+        letter-spacing: 2px;
+        margin-bottom: 4rem;
+      }
+      p {
+        font-size: 2.4rem;
+        margin-bottom: 4rem;
+      }
+    }
+    .hero__text--buttons {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 4rem;
+
+      a {
+        font-size: 2rem;
+        padding: 0.9rem 8rem;
+        letter-spacing: 1.4px;
+      }
+    }
+  }
+
+  section#author {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 4rem;
+    align-items: center;
+    padding: 10rem 6rem;
+
+    .author__picture--container {
+      margin-bottom: 0;
+      padding: 10rem;
+    }
+
+    .author__text--container {
+      font-size: 150%;
+      padding: 6rem;
+
+      .author__text--header {
+        font-size: 3.8rem;
+        margin-bottom: 5rem;
+      }
+
+      .author__text--para {
+        font-size: 2rem;
+        margin-bottom: 5rem;
+      }
+
+      a {
+        font-size: 2rem;
+        padding: 1rem 5rem;
+      }
+    }
+  }
+
+  section#offering {
+    padding: 8rem 12rem 12rem 12rem;
+
+    .offering-header {
+      font-size: 2.8rem;
+      margin-bottom: 8rem !important;
+    }
+
+    .offering__cards--container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10rem;
+
+      .offering__card {
+        padding: 3rem !important;
+
+        h3 {
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  section#contact {
+    padding: 8rem;
+
+    h3 {
+      font-size: 2.2rem;
+    }
+
+    form {
+      justify-content: stretch;
+      padding: 2rem 30%;
+      grid-row-gap: 3rem;
+      grid-column-gap: 3rem;
+      grid-template-areas:
+        "name name email email"
+        "message message message message"
+        ". button button .";
+
+      input {
+        padding: 1rem 1.2rem;
+        font-size: 1.8rem;
+      }
+
+      .message {
+        padding: 1.2rem;
+        font-size: 1.8rem;
+      }
+
+      .submit {
+        padding: 1rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+      }
+    }
+  }
+
+  footer {
+    grid-template-areas: "links recent contact";
+    grid-column-gap: 3rem;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 8rem 10rem 12rem 10rem;
+
+    h6 {
+      font-size: 1.7rem;
+      font-weight: 700;
+    }
+
+    li {
+      font-size: 1.7rem;
+    }
+
+    .footer-contact {
+      border-bottom: none;
+      align-self: center;
+
+      li {
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+      }
+    }
+
+    span {
+      font-size: 1.1rem;
+      top: 85%;
+    }
+  }
+}

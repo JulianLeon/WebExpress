@@ -1,0 +1,100 @@
+.offering-hero {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  background-image: url("/Pictures/Komprimiert/hero-pic-1.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    z-index: 3;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: $fourth-color;
+    font-size: 3rem;
+    text-shadow: 1px 1px 5px rgba($fourth-color, 0.3);
+  }
+}
+
+section.offerings-section {
+  background-color: $third-color;
+  padding: 4rem 2rem;
+
+  h2 {
+      text-align: center;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .offerings-grid {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: 1fr;
+    color: $text-dark;
+
+    .offering__card {
+      max-width: 600px;
+      margin: 0 auto;
+      width: 100%;
+      background-color: $fourth-color;
+      box-shadow: 0 2px 8px rgba(#333, 0.5);
+
+      .inner_offering {
+        padding: 2.5rem 1rem;
+        box-shadow: 0 2px 4px rgba(#333, 0.5);
+      }
+
+      .inner_offering:nth-child(odd) {
+        background-color: lighten($primary-color, 5%);
+        color: $text-light;
+        width: 100%;
+        opacity: 0.9;
+      }
+
+      h4 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        position: relative;
+        padding: 1rem;
+        color: $text-light;
+        text-align: center;
+        text-shadow: 1px 1px 1px rgba(#fff, 0.5);
+      }
+
+      h5 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+        margin-bottom: 1.2rem;
+        line-height: 1.7;
+        position: relative;
+
+        &.group {
+          text-align: center;
+        }
+
+        .price-span {
+          font-weight: 700;
+          display: inline-block;
+          position: absolute;
+          right: 0;
+        }
+
+        .yoga-time {
+          font-weight: 700;
+        }
+      }
+
+      .offering__card-w {
+        font-weight: 700;
+        display: block;
+        text-align: left;
+      }
+    }
+  }
+}
